@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box{
+            position: absolute;
+            /* top: -400px; */
+            top: 0;
+            left: 0;
+            right: 0;
+            border: 5px solid black;
+            width: 80%;
+            margin: 5px auto;
+            /* display: none; */
+            transform: scale(0);
+            transition: all 1s linear;
+        }
+        .box img{
+            width: 100%;
+        }
+
+        a{
+            position: relative;
+            width: 30%;
+            border: 1px solid black;
+            /* height: 50vh; */
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        a:hover .box{
+            transform: scale(1);
+            /* top: 0%; */
+            
+        }
+       
+    </style>
+</head>
+<body>
+    
+
+    <a href="">click
+        <div class="box">
+            <!-- <img src="https://i.pinimg.com/originals/ef/02/ba/ef02ba9ec9cdb3b7e6a8e99cd7ae0d85.gif" alt=""> -->
+            <img src="https://i.pinimg.com/originals/65/5d/2d/655d2da400a648abca600766a89deead.gif" alt="">
+        </div>
+    </a>
+
+</body>
+</html>
